@@ -1,20 +1,21 @@
-*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'open sans',sans-serif;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,serif;
+}
 
 body{
-    display: flex;             /*弹性布局*/
-    justify-content:center;    /*居中排列*/
-    align-items: center;       /*居中对齐弹性盒的各项 <div> 元素：*/
-    min-height: 100vh;         /*可视化高度百分比*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: #060a1f;
 }
 
-/*#clock{*/
-/*    border: white 10px solid;*/
-/*}*/
-
 #clock h2{
     position: relative;
-    color: #fff;
+    color:white;
     text-align: center;
     margin: 10px 0;
     font-weight: 700;
@@ -22,29 +23,35 @@ body{
     letter-spacing: 0.4em;
     font-size: 0.8em;
 }
+
 #clock #time{
     display: flex;
 }
+
 #clock #time div{
     position: relative;
     margin: 0 5px;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
 
 }
-#clock #time div span{position: relative;
+
+#clock #time div span{
+    position: relative;
     display: block;
+    background-color: #2196f3;
     width: 100px;
     height: 100px;
-    background-color: #2196f3;
     color: #fff;
-    font-weight: 300;
+    font-size: 300;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3em;
     z-index: 10;
-    box-shadow:0 0 0 1px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 0 1px black;
 }
+
 #clock #time div span:nth-child(2){
     height: 39px;
     font-size: 0.7em;
@@ -54,11 +61,12 @@ body{
     box-shadow: none;
     background: #127fd6;
     text-transform: uppercase;
-
 }
+
 #clock #time div:last-child span{
     background-color: #ff006a;
 }
+
 #clock #time div:last-child span:nth-child(2){
     background-color: #ec0062;
 }
